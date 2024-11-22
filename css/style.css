@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Configurações do fundo */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+ 
+.background {
+    background: url('../img/gato_bob.jfif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Caixa do formulário */
+.login-form {
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.login-form h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+ 
+.login-form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+ 
+/* Inputs do formulário */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+ 
+/* Botão principal */
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+ 
+/* Botões sociais */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+ 
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 67px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+ 
+.social-button img {
+    width: 36px;
+    height: 36px;
+}
+ 
+.social-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+ 
+/* Estilo específico para cada botão */
+.social-button.google {
+    border: 1px solid #db4437;
+}
+ 
+.social-button.meta {
+    border: 1px solid #4267B2;
+}
+ 
+.social-button.apple {
+    border: 1px solid #000;
+}
